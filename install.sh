@@ -63,7 +63,6 @@ fi
 
 echo "Step2: setting up symlinks"
 if $FOR_VIM; then
-    lnif $CURRENT_DIR/zshrc $HOME/.zshrc
     lnif $CURRENT_DIR/vimrc $HOME/.vimrc
     lnif $CURRENT_DIR/vimrc.bundles $HOME/.vimrc.bundles
     lnif "$CURRENT_DIR/" "$HOME/.vim"

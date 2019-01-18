@@ -1,3 +1,6 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # 自定义zsh的PS1提示符
 PS1="%n@%M:%d $ "
 
@@ -11,15 +14,16 @@ PS1="%n@%M:%d $ "
 export TERM="xterm-256color"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+#
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/qingkong/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
+# ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -87,6 +91,32 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+# 这里是我的自定义配置User configuration
 source ~/.bash_profile
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -120,8 +150,9 @@ alias gedit='pluma'
 alias gnome-screenshot='deepin-screenshot --icon -s ./images'
 alias mate-terminal='mate-terminal  --window --maximize'
 
-source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# ubuntu 可以使用下面方法安装
+#source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
+#source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH=/usr/local/anconda3/bin:$PATH
 # 让zsh支持vim
 export EDITOR="vim"
@@ -134,3 +165,7 @@ bindkey '^P' history-search-backward
 bindkey '^N' history-search-forward
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+export LC_ALL=zh_CN.UTF.8
