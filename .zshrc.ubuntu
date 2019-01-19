@@ -113,6 +113,9 @@ alias calc='mate-calc'
 alias gedit='pluma'
 alias gnome-screenshot='deepin-screenshot --icon -s ./images'
 alias mate-terminal='mate-terminal  --window --maximize'
+alias gvim='gvim -f --remote-silent %F'
+alias vim='vim -f --remote-silent %F'
+alias vi='vi -f --remote-silent %F'
 
 source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
